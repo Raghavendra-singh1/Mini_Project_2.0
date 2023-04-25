@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssFile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+   
+    <script src="https://kit.fontawesome.com/5f0f559b2e.js" crossorigin="anonymous"></script>
+    <title>Shop</title>
+</head>
+<body>
+    
+    <div class="header" >
+        <!-- navbar -->
+        <div id="navbar" >
+            <ul>
+                <li style="margin-left: 70px;"><a href="lindex.php">Home</a></li>
+                <li><a class="active" href="lshop.html">Shop</a></li>
+                <li><a href="lblog.html">Blog</a></li>
+                <li><a href="labout.html">About</a></li>
+                <li><a href="lcontact.html">Contact</a></li>
+                
+                <li><a href="minitv.html">MiniTV</a></li>
+                <li><a  href="index.php">Logout</a></li> 
+                
+                <li><a style="padding-left: 520px;" href="profile.php">myprofile</a></li> 
+                <!-- <li><a href="#bill">cart</a></li> -->
+            </ul>
+        </div>
+    <p class="logo"></p>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    </div>
+
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar" id="bill">
+            <div class="head"><p>My cart</p></div>
+            <div id="cartItem">your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total"><span>&#8377;</span> 0.00</h2>
+            </div>
+            <div><button >make payment</button></div>
+        </div>
+    
+
+    <script src="addtocart.js"></script>
+
+    <!-- to search -->
+    <script type="text/javascript">
+        function search() {
+        let filter = document.getElementById('find').value.toUpperCase();
+        let item = document.querySelectorAll('.product');
+        let l = document.getElementsByTagName('h3');
+        for(var i = 0;i<=l.length;i++){
+        let a=item[i].getElementsByTagName('h3')[0];
+        let value=a.innerHTML || a.innerText || a.textContent;
+        if(value.toUpperCase().indexOf(filter) > -1) {
+        item[i].style.display="";
+        }
+        else
+        {
+        item[i].style.display="none";
+        }
+        }
+        }
+        </script>
+
+    
+</body>
+</html>
