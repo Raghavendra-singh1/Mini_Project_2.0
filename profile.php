@@ -67,7 +67,7 @@ $row = mysqli_fetch_assoc($result);
 
 //display the user data
 echo "Name: " . $row['fname'] . "<br>";
-echo "Name: " . $row['lname'] . "<br>";
+
 echo "Email: " . $row['email'] . "<br>";
 echo "Phone: " . $row['phone'] . "<br>";
 
