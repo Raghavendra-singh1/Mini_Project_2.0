@@ -47,7 +47,7 @@
         <h2>Super value deals</h2>
         <h1>On all products</h1>
         <p>Save more with coupons & upto 10% off</p>
-        <button onclick="window.location.href='shop.html';">Shop Now</button>
+        <button onclick="window.location.href='lshop.html';">Shop Now</button>
     </section>
 
     <div class="article"  class="section-m1">
