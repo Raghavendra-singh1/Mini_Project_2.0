@@ -13,6 +13,7 @@
             $_SESSION['email'] = $row['email'];
             $_SESSION['otp'] = $row['otp'];
             echo "success";
+           
         }
         }
         else{

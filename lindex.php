@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/form.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
     <script src="script.js"></script>
-
+    <link rel="stylesheet" href="popup.css">
     <title>index</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
     <Section id="header">
         <div>
             <ul id="navbar">
-                <li><a class="active" href="lindex.php">Home</a></li>
+                <li><a class="active" href="http://localhost/miniproject2/lindex.php">Home</a></li>
                 <li><a href="lshop.html">Shop</a></li>
                 <li><a href="lblog.html">Blog</a></li>
                 <li><a href="labout.html">About</a></li>
@@ -30,8 +30,16 @@
                 
 
                
-                <li><a href="minitv.html">MiniTV</a></li>
-                <li><a  href="index.php">Logout</a></li> 
+                <li><a href="movie.html">MiniTV</a></li>
+                <div class="containe" >
+                    <button type="submit" class="btnn" onclick="openPopup()">logout</button>
+                    <div class="popup" id="popup">
+                        <img src="img/404-tick.png" alt="">
+                         <h2>thank you</h2>
+                         <p>you want logged out</p>
+                         <button  type="button" onclick="closePopup()">OK</button>
+                    </div>
+                </div>
                 
                 <li><a style="padding-left: 520px;" href="profile.php">myprofile</a></li> 
                 
@@ -182,7 +190,16 @@
     </footer>
 
     <script src="script.js"></script>
-    
+    <script>
+    let popup=document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+        location.href = "http://localhost/miniproject2/index.php";
+    }
+</script>
 
 </body>
 </html>
