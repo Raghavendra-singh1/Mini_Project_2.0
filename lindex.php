@@ -185,8 +185,8 @@
         </div>
 
         <div class="copyright">
-            <p>This project is belong to Navneet Singh 201500433 made by the help of html and css</p>
-        </div>
+        <p>This is mini project 2 is belongs to Raghavendra singh 201500541, Aman Singh Chahat 201500078,Sachin Kumar 201500595,Manish Kumar</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
